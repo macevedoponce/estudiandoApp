@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -23,14 +24,14 @@ import java.util.Map;
 
 public class editTareaActivity extends AppCompatActivity {
     EditText txtId,txtTitulo,txtDescripcion, txtRetroalimentacion;
-
+    Button btnRegresar;
     private int position;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_tarea);
-
+        btnRegresar = findViewById(R.id.btnRegresar);
         txtId=findViewById(R.id.editId);
         txtTitulo=findViewById(R.id.editTitulo);
         txtDescripcion=findViewById(R.id.editDescripcion);
@@ -43,6 +44,16 @@ public class editTareaActivity extends AppCompatActivity {
         txtTitulo.setText(TareasActivity.tareasArrayList.get(position).getTitulo());
         txtDescripcion.setText(TareasActivity.tareasArrayList.get(position).getDescripcion());
         txtRetroalimentacion.setText(TareasActivity.tareasArrayList.get(position).getRetroalimentacion());
+
+        btnRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),TareasActivity.class);
+                startActivity(intent);
+                Toast.makeText(getApplicationContext(), "Operacion Cancelada", Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
     public void actualizar(View view){
         final String id = txtId.getText().toString().trim();
