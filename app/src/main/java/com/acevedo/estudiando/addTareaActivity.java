@@ -3,12 +3,17 @@ package com.acevedo.estudiando;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
+import android.speech.RecognizerIntent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -19,23 +24,65 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class addTareaActivity extends AppCompatActivity {
 
+    //private  static final int REQ_CODE_SPEECH_INPUT=100;
+    private  static final int REQ_CODE_SPEECH_INPUT_TITULO=100,
+            REQ_CODE_SPEECH_INPUT_DESCRIPCION=101,
+            REQ_CODE_SPEECH_INPUT_RETROALIMENTACION=102;
+
     EditText edtTitulo ,edtDescripcion, edtRetroalimentacion;
     Button btnAgregar,btnRegresar;
+    ImageButton btnHablar,btnTitulo,btnDescripcion,btnRetroalimentacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_tarea);
+        //btnHablar = findViewById(R.id.btnHablar);
+        btnTitulo = findViewById(R.id.btnTit);
+        btnDescripcion = findViewById(R.id.btnDesc);
+        btnRetroalimentacion = findViewById(R.id.btnRetro);
+
         btnRegresar = findViewById(R.id.btnRegresar);
         btnAgregar = findViewById(R.id.btnAgregar);
         edtTitulo = findViewById(R.id.edtTitulo);
         edtDescripcion = findViewById(R.id.edtDescripcion);
         edtRetroalimentacion = findViewById(R.id.edtRetroalimentacion);
+/*
+        btnHablar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                iniciarEntradaVoz();
+            }
+        });
+*/
+
+        btnTitulo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                iniciarEntradaVozTit();
+            }
+        });
+        btnDescripcion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                iniciarEntradaVozDesc();
+            }
+        });
+        btnRetroalimentacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                iniciarEntradaVozRetro();
+            }
+        });
+
+
 
         btnAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +99,51 @@ public class addTareaActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Operacion Cancelada", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+    /*
+        private void iniciarEntradaVoz(){
+            Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+            intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+            intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+            intent.putExtra(RecognizerIntent.EXTRA_PROMPT,"Hola, puedes dictarme lo que necesites");
+            try {
+                startActivityForResult(intent,REQ_CODE_SPEECH_INPUT);
+            }catch (ActivityNotFoundException e){
+                Toast.makeText(getApplicationContext(), "No puedo oir nada", Toast.LENGTH_SHORT).show();
+            }
+        }*/
+    private void iniciarEntradaVozTit(){
+        Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+        intent.putExtra(RecognizerIntent.EXTRA_PROMPT,"Hola, puedes dictarme lo que necesites");
+        try {
+            startActivityForResult(intent,REQ_CODE_SPEECH_INPUT_TITULO);
+        }catch (ActivityNotFoundException e){
+            Toast.makeText(getApplicationContext(), "No puedo oir nada", Toast.LENGTH_SHORT).show();
+        }
+    }
+    private void iniciarEntradaVozDesc(){
+        Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+        intent.putExtra(RecognizerIntent.EXTRA_PROMPT,"Hola, puedes dictarme lo que necesites");
+        try {
+            startActivityForResult(intent,REQ_CODE_SPEECH_INPUT_DESCRIPCION);
+        }catch (ActivityNotFoundException e){
+            Toast.makeText(getApplicationContext(), "No puedo oir nada", Toast.LENGTH_SHORT).show();
+        }
+    }
+    private void iniciarEntradaVozRetro(){
+        Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+        intent.putExtra(RecognizerIntent.EXTRA_PROMPT,"Hola, puedes dictarme lo que necesites");
+        try {
+            startActivityForResult(intent,REQ_CODE_SPEECH_INPUT_RETROALIMENTACION);
+        }catch (ActivityNotFoundException e){
+            Toast.makeText(getApplicationContext(), "No puedo oir nada", Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void agregarTarea() {
@@ -104,4 +196,44 @@ public class addTareaActivity extends AppCompatActivity {
         super.onBackPressed();
         finish();
     }
+    //inicio agregar lo que hablo en edtTitulo
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode){
+            /* case REQ_CODE_SPEECH_INPUT:{
+                if(resultCode==RESULT_OK && null!=data){
+
+                    ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                    edtTitulo.setText(result.get(0));
+                }
+                break;
+            }*/
+            case REQ_CODE_SPEECH_INPUT_TITULO:{
+                if(resultCode==RESULT_OK && null!=data){
+
+                    ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                    edtTitulo.setText(result.get(0));
+                }
+                break;
+            }
+            case REQ_CODE_SPEECH_INPUT_DESCRIPCION:{
+                if(resultCode==RESULT_OK && null!=data){
+
+                    ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                    edtDescripcion.setText(result.get(0));
+                }
+                break;
+            }
+            case REQ_CODE_SPEECH_INPUT_RETROALIMENTACION:{
+                if(resultCode==RESULT_OK && null!=data){
+
+                    ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                    edtRetroalimentacion.setText(result.get(0));
+                }
+                break;
+            }
+        }
+    }
+    //fin agregar lo que hablo en edtTitulo
 }
