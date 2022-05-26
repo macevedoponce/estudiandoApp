@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/2022/Ciclo 2022-10/taller de proyectos/Acevedo_Git/estudiandoApp-acevedo/app/src/main/res/layout/activity_add_tarea.xml" value="0.35280797101449274" />
+        <entry key="..\:/2022/Ciclo 2022-10/taller de proyectos/Acevedo_Git/estudiandoApp-acevedo/app/src/main/res/layout/activity_curso.xml" value="0.35280797101449274" />
+        <entry key="..\:/2022/Ciclo 2022-10/taller de proyectos/Acevedo_Git/estudiandoApp-acevedo/app/src/main/res/layout/activity_cursos.xml" value="0.35280797101449274" />
+        <entry key="..\:/2022/Ciclo 2022-10/taller de proyectos/Acevedo_Git/estudiandoApp-acevedo/app/src/main/res/layout/activity_detalle_tarea.xml" value="0.35280797101449274" />
+        <entry key="..\:/2022/Ciclo 2022-10/taller de proyectos/Acevedo_Git/estudiandoApp-acevedo/app/src/main/res/layout/activity_edit_tarea.xml" value="0.35280797101449274" />
+        <entry key="..\:/2022/Ciclo 2022-10/taller de proyectos/Acevedo_Git/estudiandoApp-acevedo/app/src/main/res/layout/activity_main.xml" value="0.35280797101449274" />
+        <entry key="..\:/2022/Ciclo 2022-10/taller de proyectos/Acevedo_Git/estudiandoApp-acevedo/app/src/main/res/layout/activity_presentacion.xml" value="0.35280797101449274" />
+        <entry key="..\:/2022/Ciclo 2022-10/taller de proyectos/Acevedo_Git/estudiandoApp-acevedo/app/src/main/res/layout/activity_principal.xml" value="0.35280797101449274" />
+        <entry key="..\:/2022/Ciclo 2022-10/taller de proyectos/Acevedo_Git/estudiandoApp-acevedo/app/src/main/res/layout/activity_tareas.xml" value="0.35280797101449274" />
+        <entry key="..\:/2022/Ciclo 2022-10/taller de proyectos/Acevedo_Git/estudiandoApp-acevedo/app/src/main/res/layout/list_tareas.xml" value="0.35280797101449274" />
+        <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1855" />
+        <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.1" />
+        <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.1" />
+        <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout/activity_add_tarea.xml" value="0.2935862691960253" />
+        <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout/activity_curso.xml" value="0.3625" />
+        <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout/activity_cursos.xml" value="0.33" />
+        <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout/activity_presentacion.xml" value="0.25" />
+        <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout/activity_principal.xml" value="0.3111413043478261" />
+        <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout/activity_prueba.xml" value="0.3111413043478261" />
+        <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout/activity_tareas.xml" value="0.3625" />
+        <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout/content_scrolling.xml" value="0.3111413043478261" />
+        <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout/item_tarea.xml" value="0.3111413043478261" />
+        <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout/lista.xml" value="0.3111413043478261" />
+        <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.1905" />
+        <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/drawable/splash.xml" value="0.1905" />
+        <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/layout/activity_add_tarea.xml" value="0.3111413043478261" />
+        <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/layout/activity_agregar.xml" value="0.3111413043478261" />
+        <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/layout/activity_agregar_tarea.xml" value="0.3111413043478261" />
+        <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/layout/activity_detalle_tarea.xml" value="0.3111413043478261" />
+        <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/layout/activity_edit_tarea.xml" value="0.3111413043478261" />
+        <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/layout/activity_main.xml" value="0.3111413043478261" />
+        <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/layout/activity_presentacion.xml" value="0.3111413043478261" />
+        <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/layout/activity_principal.xml" value="0.3127917833800187" />
+        <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/layout/activity_tareas.xml" value="0.3111413043478261" />
+        <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/layout/list_tareas.xml" value="0.2346311475409836" />
+        <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/layout/lista.xml" value="0.18541666666666667" />
+        <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1905" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
