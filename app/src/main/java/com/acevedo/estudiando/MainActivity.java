@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 usuario = edtUsuario.getText().toString();
                 password = edtPassword.getText().toString();
                 if(!usuario.isEmpty() && !password.isEmpty()){
-                    validarUsuario("http://192.168.1.46/android/validar_usuario.php");
+                    validarUsuario("https://pruebasphaway.000webhostapp.com/android/validar_usuario.php");
                 }else{
                     Toast.makeText(MainActivity.this,"No se permiten campos vacios",Toast.LENGTH_SHORT).show();
                 }

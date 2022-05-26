@@ -58,7 +58,7 @@
                     android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:layout_below="@+id/tvat"
-                    android:backgroundTint="#112e50"
+                    android:backgroundTint="#03A9F4"
                     android:text="AGREGAR"
                     android:textColor="#ffffff"
                     android:textSize="10sp" />
@@ -109,12 +109,12 @@
 
 
             <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:columnCount="1"
+                android:rowCount="1"
                 android:alignmentMode="alignMargins"
-                android:columnCount="2"
                 android:columnOrderPreserved="false"
-                android:rowCount="2">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
 
                 <androidx.cardview.widget.CardView
