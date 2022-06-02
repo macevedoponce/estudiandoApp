@@ -206,13 +206,16 @@
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
 
+                    <!-- aqui falta validar solo numeros de 0 a 20-->
                     <EditText
                         android:id="@+id/edtNota"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Ingrese la nota"
                         android:padding="5dp"
-                        android:inputType="number"/>
+                        android:inputType="number"
+                        android:digits="1234567890"
+                        android:maxLength="2"/>
 
                     <ImageButton
                         android:id="@+id/btnDictarNota"
@@ -224,28 +227,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
-
-            <!-- speech to text para titulo
-            <LinearLayout
-                android:id="@+id/contenedorTitulo"
-                android:orientation="vertical"
-                android:padding="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/btnHablar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_mic_24"/>
-
-            </LinearLayout>
-             fin speech to text para titulo -->
-
         </GridLayout>
-
-
     </LinearLayout>
 
 </RelativeLayout>

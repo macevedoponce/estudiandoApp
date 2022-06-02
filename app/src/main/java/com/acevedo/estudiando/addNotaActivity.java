@@ -121,8 +121,8 @@ public class addNotaActivity extends AppCompatActivity {
                     JSONArray jsonArray = response.getJSONArray("datos");
                     for (int i=0; i<jsonArray.length();i++) {
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
-                        String alumnosDni = jsonObject.optString("dni");
-                        alumnosList.add(alumnosDni);
+                        String alumno = jsonObject.optString("alumno");
+                        alumnosList.add(alumno);
                         alumnosAdapter = new ArrayAdapter<>(addNotaActivity.this, android.R.layout.simple_spinner_item,alumnosList);
                         alumnosAdapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
                         spinnerAlumnos.setAdapter(alumnosAdapter);
@@ -165,11 +165,15 @@ public class addNotaActivity extends AppCompatActivity {
         } else if (alumno.isEmpty()) {
             Toast.makeText(this, "Seleccione Alumno", Toast.LENGTH_SHORT).show();
             return;
-        } else {
+        } else if(nota.isEmpty()){
+            Toast.makeText(this, "Ingrese Nota", Toast.LENGTH_SHORT).show();
+            return;
+        }else {
             progressDialog.show();
             StringRequest request = new StringRequest(Request.Method.POST, "https://pruebasphaway.000webhostapp.com/android/insertar_nota.php", new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
+                    //falta enviar mensaje de error, obtenido desde el api
                     Toast.makeText(getApplicationContext(), "Nota Registrada exitosamente !", Toast.LENGTH_SHORT).show();
                     progressDialog.dismiss();
                     startActivity(new Intent(getApplicationContext(), NotasActivity.class));
@@ -201,14 +205,13 @@ public class addNotaActivity extends AppCompatActivity {
         super.onBackPressed();
         finish();
     }
-    //inicio agregar lo que hablo en edtTitulo
+    //inicio agregar lo que hablo en edtNota
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode){
             case REQ_CODE_SPEECH_INPUT:{
                 if(resultCode==RESULT_OK && null!=data){
-
                     ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     edtNota.setText(result.get(0));
                 }
