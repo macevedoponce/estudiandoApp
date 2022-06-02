@@ -4,6 +4,8 @@
     package="com.acevedo.estudiando">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
 
     <application
         android:allowBackup="true"
@@ -15,7 +17,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Estudiando"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        android:networkSecurityConfig="@xml/network_security_config">
+        <activity
+            android:name=".addNotaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotasActivity"
+            android:exported="false" />
         <activity
             android:name=".detalleTareaActivity"
             android:exported="false" />
@@ -28,7 +37,8 @@
             android:exported="false" />
         <activity
             android:name=".agregar"
-            android:exported="false" /> -->
+            android:exported="false" />
+        -->
         <activity
             android:name=".addTareaActivity"
             android:exported="false" />
@@ -41,9 +51,11 @@
         <activity
             android:name=".CursosActivity"
             android:exported="false" />
-       <!-- <activity
+        <!--
+ <activity
             android:name=".MainActivity"
-            android:exported="false" />-->
+            android:exported="false" />
+        -->
         <activity
             android:name=".PrincipalActivity"
             android:exported="false" />
