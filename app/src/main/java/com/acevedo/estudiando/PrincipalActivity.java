@@ -36,7 +36,9 @@ public class PrincipalActivity extends AppCompatActivity {
         cardHorarios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getBaseContext(), "Falta implementar Horarios", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(),horarioActivity.class);
+                startActivity(intent);
+                //Toast.makeText(getBaseContext(), "Falta implementar Horarios", Toast.LENGTH_SHORT).show();
 
             }
         });
