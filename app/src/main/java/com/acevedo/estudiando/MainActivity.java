@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void recuperarPregerencias(){
         SharedPreferences preferences=getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
-        edtUsuario.setText(preferences.getString("usuario","73122365"));
-        edtPassword.setText(preferences.getString("password","73122365"));
+        edtUsuario.setText(preferences.getString("usuario","80600587"));
+        edtPassword.setText(preferences.getString("password","80600587GARCIA"));
     }
 }

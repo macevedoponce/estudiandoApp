@@ -54,7 +54,8 @@ public class CursoActivity extends AppCompatActivity {
         cardRegistros.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getBaseContext(), "Falta implementar Registros", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(),NotasActivity.class);
+                startActivity(intent);
 
             }
         });

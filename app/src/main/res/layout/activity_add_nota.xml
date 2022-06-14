@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addNotaActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/txtApellidoPaterno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acevedo Ponce"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txtNombres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtApellidoPaterno"
+                android:layout_marginTop="0dp"
+                android:text="Miguel Angel"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnRegresar"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtNombres"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="#112e50"
+                android:text="Regresar"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvat"
+                android:backgroundTint="#03A9F4"
+                android:text="AGREGAR"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+
+            <ImageView
+                android:id="@+id/imgNotificacion"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgFoto"
+                android:layout_marginStart="223dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="-42dp"
+                android:layout_marginEnd="64dp"
+                android:src="@drawable/notificacion" />
+
+            <TextView
+                android:id="@+id/tvat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnRegresar"
+                android:layout_centerHorizontal="true"
+                android:text="AGREGAR NOTA"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/foto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgFoto"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:text="DOCENTE"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+
+
+
+        </RelativeLayout>
+
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                app.cardElevation="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="SELECCIONE LA TAREA O EXAMEN"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerTareas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app.cardElevation="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="SELECCIONE ESTUDIANTE"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerAlumnos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app.cardElevation="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Nota"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                    <!-- aqui falta validar solo numeros de 0 a 20-->
+                    <EditText
+                        android:id="@+id/edtNota"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Ingrese la nota"
+                        android:padding="5dp"
+                        android:inputType="number"
+                        android:digits="1234567890"
+                        android:maxLength="2"/>
+
+                    <ImageButton
+                        android:id="@+id/btnDictarNota"
+                        android:layout_marginRight="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_mic_24"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
