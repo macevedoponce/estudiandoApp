@@ -25,7 +25,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="151dp"
                 android:layout_height="113dp"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="10dp"
                 app:srcCompat="@drawable/logo" />
 
             <EditText
@@ -65,7 +65,17 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="15dp"
                 android:backgroundTint="#112e50"
-                android:text="Iniciar Sesión"
+                android:text="Iniciar como Docente"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/btnLoginEstudiante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#112e50"
+                android:text="Iniciar como estudiante"
                 android:textColor="#FFF"
                 android:textSize="18sp" />
 
