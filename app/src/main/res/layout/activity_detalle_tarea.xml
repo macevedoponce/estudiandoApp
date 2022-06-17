@@ -106,7 +106,6 @@
 
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardTarea"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
@@ -130,6 +129,28 @@
                             android:text="Id"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app.cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
                         <TextView
                             android:id="@+id/tvTitulo"
                             android:layout_marginTop="12dp"
@@ -139,6 +160,25 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
+                        </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app.cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
 
                         <TextView
                             android:id="@+id/tvDescripcion"
@@ -149,11 +189,31 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
+                    </LinearLayout>
 
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app.cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    app:cardBackgroundColor="@color/black"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
                         <TextView
                             android:id="@+id/tvRetroalimentacion"
                             android:layout_marginTop="12dp"
-                            android:textColor="#6f6f6f"
+                            android:textColor="#fff"
                             android:textSize="18sp"
                             android:text="Retroalimentación"
                             android:layout_width="wrap_content"

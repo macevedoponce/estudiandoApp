@@ -113,7 +113,7 @@ public class editTareaActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 actualizar(view);
-                llamartopico();
+                //llamartopico();
             }
         });
 
@@ -125,14 +125,12 @@ public class editTareaActivity extends AppCompatActivity {
 
         try {
 
-            String url_foto="https://lablog.boxlight.com/hubfs/Retroalimentacio%CC%81n%20de%20los%20Estudiantes%20Primera%20Parte.jpg";
+            String url_foto="https://www.asfiscal.com/wp-content/uploads/2017/09/3.jpg";
 
-            // String token="cIb2ajMbQ7mtXBSV-rsHHW:APA91bEmqMrRYqHNFwWTTjrODwfkQLf4Kg0-5Pnf2A7OrLgQqn2yM7zdED2dc2Q7tSnQhhxslc0lqQOx8yDQl05QaCgy1lcuhv-kl-YOScfmmsD_0rg1j6kimDqkMSydGaBvqEval-1P";
-            // "cIb2ajMbQ7mtXBSV-rsHHW:APA91bEmqMrRYqHNFwWTTjrODwfkQLf4Kg0-5Pnf2A7OrLgQqn2yM7zdED2dc2Q7tSnQhhxslc0lqQOx8yDQl05QaCgy1lcuhv-kl-YOScfmmsD_0rg1j6kimDqkMSydGaBvqEval-1P"
             json.put("to","/topics/"+"enviaratodos");
             JSONObject notificacion=new JSONObject();
             notificacion.put("titulo",txtTitulo.getText().toString());
-            notificacion.put("detalle",txtDescripcion.getText().toString());
+            notificacion.put("detalle",txtRetroalimentacion.getText().toString());
             notificacion.put("foto",url_foto);
 
             json.put("data",notificacion);
@@ -196,6 +194,12 @@ public class editTareaActivity extends AppCompatActivity {
         final String retroalimentacion = txtRetroalimentacion.getText().toString().trim();
 
         final ProgressDialog progressDialog = new ProgressDialog(this);
+
+        if (!retroalimentacion.isEmpty()) {
+            // si, retroalimentacion tiene contenido | enviar notificación de retroalimentacion
+            llamartopico();
+        }
+
         progressDialog.setMessage("Actualizando");
         progressDialog.dismiss();
 

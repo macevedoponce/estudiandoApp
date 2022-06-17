@@ -30,7 +30,6 @@ public class Fcm extends FirebaseMessagingService {
     }
 
 
-
     @Override
     public void onMessageReceived(@NonNull RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
@@ -61,8 +60,6 @@ public class Fcm extends FirebaseMessagingService {
             nm.createNotificationChannel(nc);
         }
         try {
-            //Bitmap imf_foto= Picasso.get(getApplicationContext()).load(foto).get();
-            //   Picasso.get().load(user.getPhotoUrl()).placeholder(R.drawable.iconoperito).into(img);
             Bitmap imf_foto= Picasso.get().load(foto).get();
             builder.setAutoCancel(true)
                     .setWhen(System.currentTimeMillis())
@@ -88,7 +85,7 @@ public class Fcm extends FirebaseMessagingService {
 
     }
     public PendingIntent clicknoti(){
-        Intent nf=new Intent(getApplicationContext(), TareasActivity.class);// a donde mandar cuando se pulse la notificación
+        Intent nf=new Intent(getApplicationContext(), TareasEstudianteActivity.class);// a donde mandar cuando se pulse la notificación
         nf.putExtra("color","rojo");
         nf.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         return PendingIntent.getActivity(this,0,nf,0);

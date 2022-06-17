@@ -113,10 +113,7 @@ public class addTareaActivity extends AppCompatActivity {
 
         try {
 
-            String url_foto="https://www.clinicadolororofacial.es/wp-content/uploads/2019/07/el-cerebro.jpg";
-
-            // String token="cIb2ajMbQ7mtXBSV-rsHHW:APA91bEmqMrRYqHNFwWTTjrODwfkQLf4Kg0-5Pnf2A7OrLgQqn2yM7zdED2dc2Q7tSnQhhxslc0lqQOx8yDQl05QaCgy1lcuhv-kl-YOScfmmsD_0rg1j6kimDqkMSydGaBvqEval-1P";
-            // "cIb2ajMbQ7mtXBSV-rsHHW:APA91bEmqMrRYqHNFwWTTjrODwfkQLf4Kg0-5Pnf2A7OrLgQqn2yM7zdED2dc2Q7tSnQhhxslc0lqQOx8yDQl05QaCgy1lcuhv-kl-YOScfmmsD_0rg1j6kimDqkMSydGaBvqEval-1P"
+            String url_foto="https://tarea.co/wp-content/uploads/2020/04/logo.png";
             json.put("to","/topics/"+"enviaratodos");
             JSONObject notificacion=new JSONObject();
             notificacion.put("titulo",edtTitulo.getText().toString());
