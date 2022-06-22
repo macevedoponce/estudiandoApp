@@ -19,6 +19,18 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".AddPreguntaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExamenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExamenesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddExamenActivity"
+            android:exported="false" />
+        <activity
             android:name=".detalleTareaEstudianteActivity"
             android:exported="false" />
         <activity

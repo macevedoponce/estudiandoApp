@@ -5,15 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EstudianteCursosActivity">
+    tools:context=".AddExamenActivity"
+    >
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg"
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+        android:background="@drawable/bg">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -26,17 +26,7 @@
                 android:id="@+id/txtApellidoPaterno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Carlos"
-                android:textColor="#ffffff"
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/txtApellidoMaterno"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
-                android:layout_toEndOf="@+id/txtApellidoPaterno"
-                android:text="Campos"
+                android:text="Acevedo Ponce"
                 android:textColor="#ffffff"
                 android:textSize="17sp" />
 
@@ -46,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txtApellidoPaterno"
                 android:layout_marginTop="0dp"
-                android:text="Juan Eduardo"
+                android:text="Miguel Angel"
                 android:textColor="#ffffff"
                 android:textSize="25sp" />
 
@@ -61,6 +51,9 @@
                 android:textColor="#ffffff"
                 android:textSize="10sp" />
 
+
+
+
             <ImageView
                 android:id="@+id/imgNotificacion"
                 android:layout_width="89dp"
@@ -72,19 +65,22 @@
                 android:layout_marginEnd="64dp"
                 android:src="@drawable/notificacion" />
 
-            <ImageView
+            <TextView
+                android:id="@+id/tvat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/btnRegresar"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/logo_blanco" />
+                android:text="AGREGAR EXÁMEN"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
 
             <ImageView
                 android:id="@+id/imgFoto"
                 android:layout_width="62dp"
                 android:layout_height="62dp"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/alumno" />
+                android:src="@drawable/foto" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -92,21 +88,78 @@
                 android:layout_below="@+id/imgFoto"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="0dp"
-                android:text="Alumno"
+                android:text="DOCENTE"
                 android:textColor="#ffffff"
                 android:textSize="17sp" />
 
 
+
+
         </RelativeLayout>
 
-        <ListView
-            android:id="@+id/listMostrarCursoEstudiante"
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             >
 
-        </ListView>
+            <androidx.cardview.widget.CardView
+                app.cardElevation="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="TITULO EXÁMEN"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+
+                        <EditText
+                            android:id="@+id/edtTituloExamen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="" />
+
+                        <ImageButton
+                            android:id="@+id/btnTituloExamen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_baseline_mic_24" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="AGREGAR"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
 
     </LinearLayout>
 

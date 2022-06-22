@@ -48,7 +48,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txtApellidoPaterno"
                     android:layout_marginTop="0dp"
-                    android:text="Juan Carlos"
+                    android:text="Juan Eduardo"
                     android:textColor="#ffffff"
                     android:textSize="25sp" />
 

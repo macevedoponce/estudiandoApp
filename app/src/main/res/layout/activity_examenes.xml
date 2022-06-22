@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EstudianteCursosActivity">
+    tools:context=".ExamenesActivity">
 
 
     <LinearLayout
@@ -26,17 +26,7 @@
                 android:id="@+id/txtApellidoPaterno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Carlos"
-                android:textColor="#ffffff"
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/txtApellidoMaterno"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
-                android:layout_toEndOf="@+id/txtApellidoPaterno"
-                android:text="Campos"
+                android:text="Acevedo Ponce"
                 android:textColor="#ffffff"
                 android:textSize="17sp" />
 
@@ -46,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txtApellidoPaterno"
                 android:layout_marginTop="0dp"
-                android:text="Juan Eduardo"
+                android:text="Miguel Angel"
                 android:textColor="#ffffff"
                 android:textSize="25sp" />
 
@@ -72,19 +62,21 @@
                 android:layout_marginEnd="64dp"
                 android:src="@drawable/notificacion" />
 
-            <ImageView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/btnRegresar"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/logo_blanco" />
+                android:text="EXÁMEN"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
 
             <ImageView
                 android:id="@+id/imgFoto"
                 android:layout_width="62dp"
                 android:layout_height="62dp"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/alumno" />
+                android:src="@drawable/foto" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -92,7 +84,7 @@
                 android:layout_below="@+id/imgFoto"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="0dp"
-                android:text="Alumno"
+                android:text="DOCENTE"
                 android:textColor="#ffffff"
                 android:textSize="17sp" />
 
@@ -100,7 +92,7 @@
         </RelativeLayout>
 
         <ListView
-            android:id="@+id/listMostrarCursoEstudiante"
+            android:id="@+id/listMostrarExamenes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
@@ -108,6 +100,22 @@
 
         </ListView>
 
+
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:onClick="agregar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"/>
 
 </RelativeLayout>
