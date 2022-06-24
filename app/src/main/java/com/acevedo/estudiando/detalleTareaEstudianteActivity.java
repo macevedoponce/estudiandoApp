@@ -28,14 +28,14 @@ public class detalleTareaEstudianteActivity extends AppCompatActivity {
         tvTitulo = findViewById(R.id.tvTitulo);
         tvDescripcion = findViewById(R.id.tvDescripcion);
         tvRetroalimentacion = findViewById(R.id.tvRetroalimentacion);
-        tvId = findViewById(R.id.tvId);
+        //tvId = findViewById(R.id.tvId);
 
         Intent intent = getIntent();
         position = intent.getExtras().getInt("position");
 
-        tvId.setText("ID: "+TareasEstudianteActivity.tareasArrayList.get(position).getId());
-        tvTitulo.setText("TITULO: "+TareasEstudianteActivity.tareasArrayList.get(position).getTitulo());
-        tvDescripcion.setText("DESCRIPCIÓN: "+TareasEstudianteActivity.tareasArrayList.get(position).getDescripcion());
-        tvRetroalimentacion.setText("RETROALIMENTACION: "+TareasEstudianteActivity.tareasArrayList.get(position).getRetroalimentacion());
+        //tvId.setText(TareasEstudianteActivity.tareasArrayList.get(position).getId());
+        tvTitulo.setText(TareasEstudianteActivity.tareasArrayList.get(position).getTitulo());
+        tvDescripcion.setText(TareasEstudianteActivity.tareasArrayList.get(position).getDescripcion());
+        tvRetroalimentacion.setText(TareasEstudianteActivity.tareasArrayList.get(position).getRetroalimentacion());
     }
 }

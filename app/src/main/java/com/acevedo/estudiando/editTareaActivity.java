@@ -65,7 +65,7 @@ public class editTareaActivity extends AppCompatActivity {
         FirebaseMessaging.getInstance().subscribeToTopic("enviaratodos").addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
-                Toast.makeText(editTareaActivity.this,"Registrado",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(editTareaActivity.this,"Registrado",Toast.LENGTH_SHORT).show();
             }
         });
 

@@ -49,12 +49,12 @@ public class Fcm extends FirebaseMessagingService {
 
 
     private void mayorqueoreo(String titulo, String detalle, String foto) {
-        String id="mensaje";
+        String id="Estudiando";
         NotificationManager nm=(NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
         NotificationCompat.Builder builder=new NotificationCompat.Builder(this,id);
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            NotificationChannel nc=new NotificationChannel(id,"nuevo", NotificationManager.IMPORTANCE_HIGH);
+            NotificationChannel nc=new NotificationChannel(id,"Estudiando", NotificationManager.IMPORTANCE_HIGH);
             nc.setShowBadge(true);
             assert nm!=null;
             nm.createNotificationChannel(nc);
@@ -71,7 +71,7 @@ public class Fcm extends FirebaseMessagingService {
                             .bigPicture(imf_foto).bigLargeIcon(null))
                     .setContentIntent(clicknoti())
 
-                    .setContentInfo("nuevo");
+                    .setContentInfo("Estudiando");
 
             Random random=new Random();
             int idNotity =random.nextInt(8000);
