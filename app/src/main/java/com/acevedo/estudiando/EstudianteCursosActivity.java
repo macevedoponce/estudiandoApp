@@ -35,7 +35,7 @@ public class EstudianteCursosActivity extends AppCompatActivity {
     AdapterEstudianteCursos adapterEstudianteCursos;
 
     public static ArrayList<EstudianteCursos> estudianteCursosArrayList = new ArrayList<>();
-    String url="https://pruebasphaway.000webhostapp.com/android/Tareas/cursos_por_grado.php";
+    String url="http://trainingcrane.pe/estudiandoadmin/android/Tareas/cursos_por_grado.php";
     EstudianteCursos estudianteCursos;
 
     Button btnRegresar;

@@ -42,7 +42,7 @@ public class TareasActivity extends AppCompatActivity {
     Adapter adapter;
 
     public static ArrayList<Tareas>tareasArrayList = new ArrayList<>();
-    String url="https://pruebasphaway.000webhostapp.com/android/Tareas/tareaslist.php";
+    String url="http://trainingcrane.pe/estudiandoadmin/android/Tareas/tareaslist.php";
     Tareas tareas;
 
     Button btnRegresar;
@@ -95,7 +95,7 @@ public class TareasActivity extends AppCompatActivity {
         });
     }
     private void EliminarDatos(String id){
-        StringRequest request = new StringRequest(Request.Method.POST, "https://pruebasphaway.000webhostapp.com/android/eliminar_tareas.php", new Response.Listener<String>() {
+        StringRequest request = new StringRequest(Request.Method.POST, "http://trainingcrane.pe/estudiandoadmin/android/eliminar_tareas.php", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Toast.makeText(TareasActivity.this, "Tarea eliminada", Toast.LENGTH_SHORT).show();

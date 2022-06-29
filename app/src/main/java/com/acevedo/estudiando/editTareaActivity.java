@@ -203,7 +203,7 @@ public class editTareaActivity extends AppCompatActivity {
         progressDialog.setMessage("Actualizando");
         progressDialog.dismiss();
 
-        StringRequest request = new StringRequest(Request.Method.POST, "https://pruebasphaway.000webhostapp.com/android/editar_tarea.php", new Response.Listener<String>() {
+        StringRequest request = new StringRequest(Request.Method.POST, "http://trainingcrane.pe/estudiandoadmin/android/editar_tarea.php", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Toast.makeText(getApplicationContext(), "Tarea Actualizada exitosamente !", Toast.LENGTH_SHORT).show();

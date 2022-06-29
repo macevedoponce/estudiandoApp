@@ -35,7 +35,7 @@ public class TareasEstudianteActivity extends AppCompatActivity {
     Adapter adapter;
 
     public static ArrayList<Tareas>tareasArrayList = new ArrayList<>();
-    String url = "https://pruebasphaway.000webhostapp.com/android/Tareas/tareaslist.php";
+    String url = "http://trainingcrane.pe/estudiandoadmin/android/Tareas/tareaslist.php";
     Tareas tareas;
 
     Button btnRegresar;

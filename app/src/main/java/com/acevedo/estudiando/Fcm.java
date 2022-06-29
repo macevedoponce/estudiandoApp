@@ -1,5 +1,6 @@
 package com.acevedo.estudiando;
 
+import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -52,6 +53,12 @@ public class Fcm extends FirebaseMessagingService {
         String id="Estudiando";
         NotificationManager nm=(NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
         NotificationCompat.Builder builder=new NotificationCompat.Builder(this,id);
+        /*
+        Notification builder = new Notification.Builder(this)
+                .setContentTitle(titulo)
+                .setSmallIcon(R.drawable.logo_blanco)
+                .build();
+        */
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
             NotificationChannel nc=new NotificationChannel(id,"Estudiando", NotificationManager.IMPORTANCE_HIGH);
@@ -84,6 +91,7 @@ public class Fcm extends FirebaseMessagingService {
         }
 
     }
+
     public PendingIntent clicknoti(){
         Intent nf=new Intent(getApplicationContext(), TareasEstudianteActivity.class);// a donde mandar cuando se pulse la notificación
         nf.putExtra("color","rojo");

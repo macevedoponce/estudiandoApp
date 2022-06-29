@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 usuario = edtUsuario.getText().toString();
                 password = edtPassword.getText().toString();
                 if(!usuario.isEmpty() && !password.isEmpty()){
-                    validarUsuario("https://pruebasphaway.000webhostapp.com/android/validar_usuario.php");
+                    validarUsuario("http://trainingcrane.pe/estudiandoadmin/android/validar_usuario.php");
                 }else{
                     Toast.makeText(MainActivity.this,"No se permiten campos vacios",Toast.LENGTH_SHORT).show();
                 }
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 usuario = edtUsuario.getText().toString();
                 password = edtPassword.getText().toString();
                 if(!usuario.isEmpty() && !password.isEmpty()){
-                    validarEstudiante("https://pruebasphaway.000webhostapp.com/android/validar_estudiante.php");
+                    validarEstudiante("http://trainingcrane.pe/estudiandoadmin/android/validar_estudiante.php");
                 }else{
                     Toast.makeText(MainActivity.this,"No se permiten campos vacios",Toast.LENGTH_SHORT).show();
                 }
@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void recuperarPregerencias(){
         SharedPreferences preferences=getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
-        edtUsuario.setText(preferences.getString("usuario","78715868"));
-        edtPassword.setText(preferences.getString("password","78715868SOTO"));
+        edtUsuario.setText(preferences.getString("usuario","80600587"));
+        edtPassword.setText(preferences.getString("password","80600587GARCIA"));
     }
 }

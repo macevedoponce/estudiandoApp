@@ -32,7 +32,7 @@ public class NotasActivity extends AppCompatActivity {
     AdapterAlumnos adapterAlumnos;
 
     public static ArrayList<Alumnos> alumnosArrayList = new ArrayList<>();
-    String url="https://pruebasphaway.000webhostapp.com/android/Tareas/alumnoslist.php";
+    String url="http://trainingcrane.pe/estudiandoadmin/android/Tareas/alumnoslist.php";
     Alumnos alumnos;
 
     Button btnRegresar;

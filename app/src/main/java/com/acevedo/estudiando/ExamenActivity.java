@@ -114,7 +114,7 @@ public class ExamenActivity extends AppCompatActivity {
         });
     }
     private void EliminarDatos(String id){
-        StringRequest request = new StringRequest(Request.Method.POST, "https://pruebasphaway.000webhostapp.com/android/eliminar_examen.php", new Response.Listener<String>() {
+        StringRequest request = new StringRequest(Request.Method.POST, "http://trainingcrane.pe/estudiandoadmin/android/eliminar_examen.php", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Toast.makeText(ExamenActivity.this, "Pregunta eliminada", Toast.LENGTH_SHORT).show();
