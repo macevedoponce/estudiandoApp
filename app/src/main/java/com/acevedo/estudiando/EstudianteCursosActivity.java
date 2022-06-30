@@ -35,7 +35,7 @@ public class EstudianteCursosActivity extends AppCompatActivity {
     AdapterEstudianteCursos adapterEstudianteCursos;
 
     public static ArrayList<EstudianteCursos> estudianteCursosArrayList = new ArrayList<>();
-    String url="http://trainingcrane.pe/estudiandoadmin/android/Tareas/cursos_por_grado.php";
+    String url="https://tdhxqkfq.lucusvirtual.es/android/Tareas/cursos_por_grado.php";
     EstudianteCursos estudianteCursos;
 
     Button btnRegresar;
