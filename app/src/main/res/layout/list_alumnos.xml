@@ -3,43 +3,60 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/txtid"
-        android:layout_width="60dp"
-        android:text="1"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:background="#112e50"
-        android:layout_height="60dp">
 
-    </TextView>
-    <RelativeLayout
-        android:layout_width="wrap_content"
+
+    <GridLayout
+        android:columnCount="1"
+        android:rowCount="1"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/txtAlumno"
-            android:layout_width="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="17dp"
-            android:layout_marginStart="10dp"
-            android:text="Alumno"
-            android:layout_height="wrap_content">
-        </TextView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app.cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:text=""
-            android:textColor="@color/black"
-            android:layout_marginEnd="8dp"
-            android:layout_alignParentRight="true"
-            android:layout_height="wrap_content">
-        </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:padding="16dp">
 
-    </RelativeLayout>
+                <TextView
+                    android:id="@+id/txtid"
+                    android:layout_width="40dp"
+                    android:text="1"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="#112e50"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:id="@+id/txtAlumno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:text="KIARA NICOLLE VALENTINA HOYOS ALVARADO"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
 
 </LinearLayout>

@@ -61,8 +61,8 @@ public class addNotaActivity extends AppCompatActivity {
         btnRegresar = findViewById(R.id.btnRegresar);
         btnAgregar = findViewById(R.id.btnAgregar);
         edtNota = findViewById(R.id.edtNota);
-        String url = "http://trainingcrane.pe/estudiandoadmin/android/Tareas/tareaslist.php";
-        String url2 = "hhttp://trainingcrane.pe/estudiandoadmin/android/Tareas/alumnoslist.php";
+        String url = "https://tdhxqkfq.lucusvirtual.es/android/Tareas/tareaslist.php";
+        String url2 = "https://tdhxqkfq.lucusvirtual.es/android/Tareas/alumnoslist.php";
         //tareas
 
         btnDictarNota.setOnClickListener(new View.OnClickListener() {
@@ -170,7 +170,7 @@ public class addNotaActivity extends AppCompatActivity {
             return;
         }else {
             progressDialog.show();
-            StringRequest request = new StringRequest(Request.Method.POST, "http://trainingcrane.pe/estudiandoadmin/android/insertar_nota.php", new Response.Listener<String>() {
+            StringRequest request = new StringRequest(Request.Method.POST, "https://tdhxqkfq.lucusvirtual.es/android/insertar_nota.php", new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
                     //falta enviar mensaje de error, obtenido desde el api

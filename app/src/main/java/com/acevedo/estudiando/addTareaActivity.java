@@ -201,7 +201,7 @@ public class addTareaActivity extends AppCompatActivity {
             return;
         } else {
             progressDialog.show();
-            StringRequest request = new StringRequest(Request.Method.POST, "http://trainingcrane.pe/estudiandoadmin/android/insertar_tarea.php", new Response.Listener<String>() {
+            StringRequest request = new StringRequest(Request.Method.POST, "https://tdhxqkfq.lucusvirtual.es/android/insertar_tarea.php", new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
                     Toast.makeText(getApplicationContext(), "Tarea Registrada exitosamente !", Toast.LENGTH_SHORT).show();

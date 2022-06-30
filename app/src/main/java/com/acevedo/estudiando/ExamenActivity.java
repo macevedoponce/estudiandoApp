@@ -36,7 +36,7 @@ public class ExamenActivity extends AppCompatActivity {
     AdapterExamen adapterExamen;
 
     public static ArrayList<Examen>examenArrayList = new ArrayList<>();
-    String url = "https://pruebasphaway.000webhostapp.com/android/Tareas/examenlist.php";
+    String url = "https://tdhxqkfq.lucusvirtual.es/android/Tareas/examenlist.php";
     Examen examen;
     Button btnRegresar;
 
@@ -114,7 +114,7 @@ public class ExamenActivity extends AppCompatActivity {
         });
     }
     private void EliminarDatos(String id){
-        StringRequest request = new StringRequest(Request.Method.POST, "http://trainingcrane.pe/estudiandoadmin/android/eliminar_examen.php", new Response.Listener<String>() {
+        StringRequest request = new StringRequest(Request.Method.POST, "https://tdhxqkfq.lucusvirtual.es/android/eliminar_examen.php", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Toast.makeText(ExamenActivity.this, "Pregunta eliminada", Toast.LENGTH_SHORT).show();

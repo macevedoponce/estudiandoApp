@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 usuario = edtUsuario.getText().toString();
                 password = edtPassword.getText().toString();
                 if(!usuario.isEmpty() && !password.isEmpty()){
-                    validarUsuario("http://trainingcrane.pe/estudiandoadmin/android/validar_usuario.php");
+                    validarUsuario("https://tdhxqkfq.lucusvirtual.es/android/validar_usuario.php");
                 }else{
                     Toast.makeText(MainActivity.this,"No se permiten campos vacios",Toast.LENGTH_SHORT).show();
                 }
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 usuario = edtUsuario.getText().toString();
                 password = edtPassword.getText().toString();
                 if(!usuario.isEmpty() && !password.isEmpty()){
-                    validarEstudiante("http://trainingcrane.pe/estudiandoadmin/android/validar_estudiante.php");
+                    validarEstudiante("https://tdhxqkfq.lucusvirtual.es/android/validar_estudiante.php");
                 }else{
                     Toast.makeText(MainActivity.this,"No se permiten campos vacios",Toast.LENGTH_SHORT).show();
                 }
