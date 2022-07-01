@@ -173,14 +173,14 @@
                 android:layout_marginTop="12dp"
                 android:textColor="#6f6f6f"
                 android:textSize="18sp"
-                android:text="Horario Que se tiene"
+                android:text="Horario"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-    <androidx.cardview.widget.CardView
+    <!--<androidx.cardview.widget.CardView
         android:id="@+id/cardHorariosEsperado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -213,7 +213,7 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
+-->
 </GridLayout>
 
     </LinearLayout>

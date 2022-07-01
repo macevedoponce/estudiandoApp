@@ -32,7 +32,8 @@ public class CursoActivity extends AppCompatActivity {
         cardExamenes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getBaseContext(), "Falta implementar Examenes", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(),ExamenesActivity.class);
+                startActivity(intent);
 
             }
         });

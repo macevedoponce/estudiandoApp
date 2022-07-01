@@ -1,5 +1,6 @@
 package com.acevedo.estudiando;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,8 +21,15 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.messaging.FirebaseMessaging;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -53,6 +61,13 @@ public class editTareaActivity extends AppCompatActivity {
         txtTitulo=findViewById(R.id.editTitulo);
         txtDescripcion=findViewById(R.id.editDescripcion);
         txtRetroalimentacion=findViewById(R.id.editRetroalimentacion);
+
+        FirebaseMessaging.getInstance().subscribeToTopic("enviaratodos").addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                //Toast.makeText(editTareaActivity.this,"Registrado",Toast.LENGTH_SHORT).show();
+            }
+        });
 
         Intent intent = getIntent();
         position=intent.getExtras().getInt("position");
@@ -98,10 +113,46 @@ public class editTareaActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 actualizar(view);
+                //llamartopico();
             }
         });
 
     }
+    private void llamartopico() {
+
+        RequestQueue myrequest= Volley.newRequestQueue(getApplicationContext());
+        JSONObject json = new JSONObject();
+
+        try {
+
+            String url_foto="https://www.asfiscal.com/wp-content/uploads/2017/09/3.jpg";
+
+            json.put("to","/topics/"+"enviaratodos");
+            JSONObject notificacion=new JSONObject();
+            notificacion.put("titulo",txtTitulo.getText().toString());
+            notificacion.put("detalle",txtRetroalimentacion.getText().toString());
+            notificacion.put("foto",url_foto);
+
+            json.put("data",notificacion);
+            String URL="https://fcm.googleapis.com/fcm/send";
+            JsonObjectRequest request=new JsonObjectRequest(Request.Method.POST,URL,json,null,null){
+                @Override
+                public Map<String, String> getHeaders() {
+                    Map<String,String>header=new HashMap<>();
+                    header.put("content-type","application/json");
+                    header.put("authorization","key=AAAACeW3jfs:APA91bE1B9cXQGa8Yc7lYEAxxx7xfGSK3wiRlkxrxEqnahu-GjjhjTmTNY-7jReSLKWx5-BLmu15vYPP36z2pr2M7OMtGehP8SirddZrYHfMlZg-lbkmHetH4I3V7IjJvHtiWZzz3JHX");
+                    return  header;
+
+                }
+            };
+            myrequest.add(request);
+
+
+        }catch (JSONException e){
+            e.printStackTrace();
+        }
+    }
+
     private void iniciarEntradaVozTit(){
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
@@ -143,10 +194,16 @@ public class editTareaActivity extends AppCompatActivity {
         final String retroalimentacion = txtRetroalimentacion.getText().toString().trim();
 
         final ProgressDialog progressDialog = new ProgressDialog(this);
+
+        if (!retroalimentacion.isEmpty()) {
+            // si, retroalimentacion tiene contenido | enviar notificación de retroalimentacion
+            llamartopico();
+        }
+
         progressDialog.setMessage("Actualizando");
         progressDialog.dismiss();
 
-        StringRequest request = new StringRequest(Request.Method.POST, "https://pruebasphaway.000webhostapp.com/android/editar_tarea.php", new Response.Listener<String>() {
+        StringRequest request = new StringRequest(Request.Method.POST, "https://tdhxqkfq.lucusvirtual.es/android/editar_tarea.php", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Toast.makeText(getApplicationContext(), "Tarea Actualizada exitosamente !", Toast.LENGTH_SHORT).show();

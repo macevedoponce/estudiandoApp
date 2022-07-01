@@ -24,7 +24,7 @@ public class PrincipalActivity extends AppCompatActivity {
         btnCerrar = findViewById(R.id.btnCerrar);
         cardCursos = findViewById(R.id.cardCursos);
         cardHorarios = findViewById(R.id.cardHorarios);
-        cardHorariosEsperado = findViewById(R.id.cardHorariosEsperado);
+        //cardHorariosEsperado = findViewById(R.id.cardHorariosEsperado);
 // aqui comienza los cardViews
         cardCursos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,21 +37,21 @@ public class PrincipalActivity extends AppCompatActivity {
         cardHorarios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),aluhorarioActivity.class);
-                startActivity(intent);
-                //Toast.makeText(getBaseContext(), "Falta implementar Horarios", Toast.LENGTH_SHORT).show();
-
-            }
-        });
-        cardHorariosEsperado.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),horarioActivity.class);
                 startActivity(intent);
                 //Toast.makeText(getBaseContext(), "Falta implementar Horarios", Toast.LENGTH_SHORT).show();
 
             }
         });
+       /* cardHorariosEsperado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),aluhorarioActivity.class);
+                startActivity(intent);
+                //Toast.makeText(getBaseContext(), "Falta implementar Horarios", Toast.LENGTH_SHORT).show();
+
+            }
+        });*/
 
 // aqui terminan los cardViews
 

@@ -17,22 +17,43 @@
         <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout/content_scrolling.xml" value="0.3111413043478261" />
         <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout/item_tarea.xml" value="0.3111413043478261" />
         <entry key="..\:/Users/MIGUEL/AndroidStudioProjects/Estudiando/app/src/main/res/layout/lista.xml" value="0.3111413043478261" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_add_examen.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_add_nota.xml" value="0.3484375" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_add_pregunta.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_add_tarea.xml" value="0.24365942028985507" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_aluhorario.xml" value="0.33" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_curso.xml" value="0.33" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_cursos.xml" value="0.3625" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_detalle_tarea.xml" value="0.3625" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_detalle_tarea_estudiante.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_edit_tarea.xml" value="0.3625" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_estudiante_curso.xml" value="0.3625" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_estudiante_cursos.xml" value="0.3625" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_estudiante_tareas.xml" value="0.3625" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_estudianteprincipal.xml" value="0.3625" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_estuprincipal.xml" value="0.3625" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_examen.xml" value="0.3484375" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_examenes.xml" value="0.357630979498861" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_examenes_estudiante.xml" value="0.29375" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_horario.xml" value="0.33" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_main.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_nota_personal.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_notas.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_principal.xml" value="0.3625" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_principal_estudiante.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_realizar_examen_estudiante.xml" value="0.2796875" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_retroalimentacion_estudiante.xml" value="0.2796875" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_tareas.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_tareas_estudiante.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_alumnos.xml" value="0.3625" />
-        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_cursos.xml" value="0.1" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_cursos.xml" value="0.25" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_estudiante_cursos.xml" value="0.3625" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_estudiante_examen.xml" value="0.29375" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_estudiante_retroalimentacion.xml" value="0.29375" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_examen.xml" value="0.3625" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_examenes.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_horarios.xml" value="0.33" />
-        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_tareas.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_tareas.xml" value="0.5" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/xml/network_security_config.xml" value="0.2703804347826087" />
         <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.1905" />
         <entry key="..\:/xampp/htdocs/android/Estudiando/app/src/main/res/drawable/splash.xml" value="0.1905" />

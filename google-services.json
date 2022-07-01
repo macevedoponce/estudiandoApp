@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "42508717563",
+    "project_id": "phaway-dc5ec",
+    "storage_bucket": "phaway-dc5ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42508717563:android:d0b199f728910f9c520f5e",
+        "android_client_info": {
+          "package_name": "com.acevedo.estudiando"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42508717563-4mp0ci3utd48c0g6ssran9nj0c2hc2mo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-oeNtZ4ejetPIB7qg1OMX4gPvjLoEzkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42508717563-4mp0ci3utd48c0g6ssran9nj0c2hc2mo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

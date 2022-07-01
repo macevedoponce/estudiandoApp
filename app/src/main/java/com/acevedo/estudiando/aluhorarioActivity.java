@@ -31,7 +31,7 @@ public class aluhorarioActivity extends AppCompatActivity {
     AdapterHorarioAlumnos adapterHorarioAlumnos;
 
     public static ArrayList<Horarios> horariosArrayList = new ArrayList<>();
-    String url="https://pruebasphaway.000webhostapp.com/android/Tareas/horariolist.php";
+    String url="https://tdhxqkfq.lucusvirtual.es/android/Tareas/horariolist.php";
     Horarios horarios;
 
     Button btnRegresar;

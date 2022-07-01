@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPreguntaActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/txtApellidoPaterno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acevedo Ponce"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txtNombres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtApellidoPaterno"
+                android:layout_marginTop="0dp"
+                android:text="Miguel Angel"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnRegresar"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtNombres"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="#112e50"
+                android:text="Regresar"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvat"
+                android:backgroundTint="#03A9F4"
+                android:text="AGREGAR"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+
+            <ImageView
+                android:id="@+id/imgNotificacion"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgFoto"
+                android:layout_marginStart="223dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="-42dp"
+                android:layout_marginEnd="64dp"
+                android:src="@drawable/notificacion" />
+
+            <TextView
+                android:id="@+id/tvat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnRegresar"
+                android:layout_centerHorizontal="true"
+                android:text="AGREGAR PREGUNTA"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/foto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgFoto"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:text="DOCENTE"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+
+
+
+        </RelativeLayout>
+
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                app.cardElevation="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="PREGUNTA:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edtPregunta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="" />
+
+                        <ImageButton
+                            android:id="@+id/btnPregunta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_baseline_mic_24" />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                app.cardElevation="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/black"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="PUNTOS: "
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edtPunto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:hint="puntos"
+                            android:inputType="number"
+                            android:textColor="#fff"
+                            android:textColorHint="#C8C8C8" />
+
+                        <ImageButton
+                            android:id="@+id/btnPunto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_baseline_mic_24" />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                app.cardElevation="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="ALTERNATIVAS: "
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/estado1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:clickable="false"/>
+
+                        <EditText
+                            android:id="@+id/edtAlternativa1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/btnAlternativa1"
+                            android:layout_toEndOf="@+id/estado1"
+                            android:hint="Alternativa 1" />
+
+                        <ImageButton
+                            android:id="@+id/btnAlternativa1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_baseline_mic_24" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/estado2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"/>
+
+                        <EditText
+                            android:id="@+id/edtAlternativa2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/btnAlternativa2"
+                            android:layout_toEndOf="@+id/estado2"
+                            android:hint="Alternativa 2" />
+
+                        <ImageButton
+                            android:id="@+id/btnAlternativa2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_baseline_mic_24" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/estado3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"/>
+
+                        <EditText
+                            android:id="@+id/edtAlternativa3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/btnAlternativa3"
+                            android:layout_toEndOf="@+id/estado3"
+                            android:hint="Alternativa 3" />
+
+                        <ImageButton
+                            android:id="@+id/btnAlternativa3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_baseline_mic_24" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/estado4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"/>
+
+                        <EditText
+                            android:id="@+id/edtAlternativa4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/btnAlternativa4"
+                            android:layout_toEndOf="@+id/estado4"
+                            android:hint="Alternativa 4" />
+
+                        <ImageButton
+                            android:id="@+id/btnAlternativa4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_baseline_mic_24" />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                app.cardElevation="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="RETROALIMENTACIÓN: "
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edtRetroalimentacion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/black"
+                            android:hint="retroalimentacion de la pregunta"/>
+
+                        <ImageButton
+                            android:id="@+id/btnRetroalimentacion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_baseline_mic_24" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

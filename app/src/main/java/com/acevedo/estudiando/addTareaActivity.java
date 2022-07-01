@@ -21,8 +21,12 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -87,7 +91,9 @@ public class addTareaActivity extends AppCompatActivity {
         btnAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 agregarTarea();
+                llamartopico();
             }
         });
 
@@ -99,6 +105,39 @@ public class addTareaActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Operacion Cancelada", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+    private void llamartopico() {
+
+        RequestQueue myrequest= Volley.newRequestQueue(getApplicationContext());
+        JSONObject json = new JSONObject();
+
+        try {
+
+            String url_foto="https://tarea.co/wp-content/uploads/2020/04/logo.png";
+            json.put("to","/topics/"+"enviaratodos");
+            JSONObject notificacion=new JSONObject();
+            notificacion.put("titulo",edtTitulo.getText().toString());
+            notificacion.put("detalle",edtDescripcion.getText().toString());
+            notificacion.put("foto",url_foto);
+
+            json.put("data",notificacion);
+            String URL="https://fcm.googleapis.com/fcm/send";
+            JsonObjectRequest request=new JsonObjectRequest(Request.Method.POST,URL,json,null,null){
+                @Override
+                public Map<String, String> getHeaders() {
+                    Map<String,String>header=new HashMap<>();
+                    header.put("content-type","application/json");
+                    header.put("authorization","key=AAAACeW3jfs:APA91bE1B9cXQGa8Yc7lYEAxxx7xfGSK3wiRlkxrxEqnahu-GjjhjTmTNY-7jReSLKWx5-BLmu15vYPP36z2pr2M7OMtGehP8SirddZrYHfMlZg-lbkmHetH4I3V7IjJvHtiWZzz3JHX");
+                    return  header;
+
+                }
+            };
+            myrequest.add(request);
+
+
+        }catch (JSONException e){
+            e.printStackTrace();
+        }
     }
     /*
         private void iniciarEntradaVoz(){
@@ -162,7 +201,7 @@ public class addTareaActivity extends AppCompatActivity {
             return;
         } else {
             progressDialog.show();
-            StringRequest request = new StringRequest(Request.Method.POST, "https://pruebasphaway.000webhostapp.com/android/insertar_tarea.php", new Response.Listener<String>() {
+            StringRequest request = new StringRequest(Request.Method.POST, "https://tdhxqkfq.lucusvirtual.es/android/insertar_tarea.php", new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
                     Toast.makeText(getApplicationContext(), "Tarea Registrada exitosamente !", Toast.LENGTH_SHORT).show();
