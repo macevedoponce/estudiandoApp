@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EstudianteCursoActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="193dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/txtApellidoPaterno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carlos"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txtApellidoMaterno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_toEndOf="@+id/txtApellidoPaterno"
+                android:text="Campos"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txtNombres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtApellidoPaterno"
+                android:layout_marginTop="0dp"
+                android:text="Juan Eduardo"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/imgNotificacion"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgFoto"
+                android:layout_marginStart="223dp"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="-42dp"
+                android:layout_marginEnd="64dp"
+                android:src="@drawable/notificacion" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="159dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/logo_blanco" />
+
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/alumno" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgFoto"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:text="Alumno"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="157dp"
+                android:layout_marginBottom="28dp"
+                android:text="EXAMEN"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnSalir"
+                android:layout_width="73dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="96dp"
+                android:background="@color/teal_700"
+                android:text="Salir"
+                android:textSize="10dp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNumeroPregunta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PREGUNTA #"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_margin="15dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txtPreguntaExamen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textColor="#000000"
+                android:text="¿PREGUNTA?"
+
+                android:textAlignment="center"
+                android:textColorLink="#000000"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/Opcion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Opcion1"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Opcion2"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Opcion3"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/Opcion4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Opcion4"
+                    android:textSize="18dp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnSiguiente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:text="siguiente" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

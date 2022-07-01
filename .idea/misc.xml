@@ -34,17 +34,22 @@
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_estuprincipal.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_examen.xml" value="0.3484375" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_examenes.xml" value="0.357630979498861" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_examenes_estudiante.xml" value="0.29375" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_horario.xml" value="0.33" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_main.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_nota_personal.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_notas.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_principal.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_principal_estudiante.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_realizar_examen_estudiante.xml" value="0.2796875" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_retroalimentacion_estudiante.xml" value="0.2796875" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_tareas.xml" value="0.1762917933130699" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/activity_tareas_estudiante.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_alumnos.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_cursos.xml" value="0.25" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_estudiante_cursos.xml" value="0.3625" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_estudiante_examen.xml" value="0.29375" />
+        <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_estudiante_retroalimentacion.xml" value="0.29375" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_examen.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_examenes.xml" value="0.3625" />
         <entry key="..\:/Users/MIGUEL/Documents/GitHub/estudiandoApp/app/src/main/res/layout/list_horarios.xml" value="0.33" />
