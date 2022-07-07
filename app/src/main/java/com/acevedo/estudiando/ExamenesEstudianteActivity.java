@@ -32,7 +32,7 @@ public class ExamenesEstudianteActivity extends AppCompatActivity {
     AdapterEstudianteExamen adapter;
 
     public static ArrayList<Examenes>examenesArrayList = new ArrayList<>();
-    String url = "https://pruebasphaway.000webhostapp.com/android/Tareas/exameneslist.php";
+    String url = "https://tdhxqkfq.lucusvirtual.es/android/Tareas/exameneslist.php";
     Examenes examenes;
     Button btnRegresar;
 

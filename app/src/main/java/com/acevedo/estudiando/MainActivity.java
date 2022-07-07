@@ -41,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        setTheme(R.style.Theme_Estudiando); // nuevo
+       // setTheme(R.style.Theme_Estudiando); // nuevo
+        setTheme(R.style.SplashTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         edtUsuario=findViewById(R.id.edtUsuario);
