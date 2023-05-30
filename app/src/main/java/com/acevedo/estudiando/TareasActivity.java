@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.acevedo.estudiando.Util.Util;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -42,7 +43,7 @@ public class TareasActivity extends AppCompatActivity {
     Adapter adapter;
 
     public static ArrayList<Tareas>tareasArrayList = new ArrayList<>();
-    String url="https://tdhxqkfq.lucusvirtual.es/android/Tareas/tareaslist.php";
+    String url= Util.RUTA+"/Tareas/tareaslist.php";
     Tareas tareas;
 
     Button btnRegresar;
@@ -95,7 +96,8 @@ public class TareasActivity extends AppCompatActivity {
         });
     }
     private void EliminarDatos(String id){
-        StringRequest request = new StringRequest(Request.Method.POST, "https://tdhxqkfq.lucusvirtual.es/android/eliminar_tareas.php", new Response.Listener<String>() {
+        String url= Util.RUTA+"//eliminar_tareas.php";
+        StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Toast.makeText(TareasActivity.this, "Tarea eliminada", Toast.LENGTH_SHORT).show();

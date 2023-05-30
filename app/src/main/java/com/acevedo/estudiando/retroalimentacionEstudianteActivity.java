@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.acevedo.estudiando.Util.Util;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -29,7 +30,7 @@ public class retroalimentacionEstudianteActivity extends AppCompatActivity {
     AdapterRetroalimentacionEstudiante adapter;
 
     public static ArrayList<ExamenEstudianteRetro> examenEstudianteRetroArrayList = new ArrayList<>();
-    String url = "https://pruebasphaway.000webhostapp.com/android/mostrar_preguntas.php";
+    String url = Util.RUTA+"/mostrar_preguntas.php";
 
     ExamenEstudianteRetro ExamenEstudianteRetro;
 

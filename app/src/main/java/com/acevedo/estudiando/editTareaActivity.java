@@ -16,6 +16,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.acevedo.estudiando.Util.Util;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -202,8 +203,8 @@ public class editTareaActivity extends AppCompatActivity {
 
         progressDialog.setMessage("Actualizando");
         progressDialog.dismiss();
-
-        StringRequest request = new StringRequest(Request.Method.POST, "https://tdhxqkfq.lucusvirtual.es/android/editar_tarea.php", new Response.Listener<String>() {
+        String url= Util.RUTA+"/editar_tarea.php";
+        StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Toast.makeText(getApplicationContext(), "Tarea Actualizada exitosamente !", Toast.LENGTH_SHORT).show();

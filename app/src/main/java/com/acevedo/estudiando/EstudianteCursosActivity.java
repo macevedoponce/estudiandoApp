@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.acevedo.estudiando.Util.Util;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -35,7 +36,7 @@ public class EstudianteCursosActivity extends AppCompatActivity {
     AdapterEstudianteCursos adapterEstudianteCursos;
 
     public static ArrayList<EstudianteCursos> estudianteCursosArrayList = new ArrayList<>();
-    String url="https://tdhxqkfq.lucusvirtual.es/android/Tareas/cursos_por_grado.php";
+    String url= Util.RUTA+"/Tareas/cursos_por_grado.php";
     EstudianteCursos estudianteCursos;
 
     Button btnRegresar;

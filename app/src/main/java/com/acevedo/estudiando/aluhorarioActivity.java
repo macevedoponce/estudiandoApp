@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.acevedo.estudiando.Util.Util;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -31,7 +32,7 @@ public class aluhorarioActivity extends AppCompatActivity {
     AdapterHorarioAlumnos adapterHorarioAlumnos;
 
     public static ArrayList<Horarios> horariosArrayList = new ArrayList<>();
-    String url="https://tdhxqkfq.lucusvirtual.es/android/Tareas/horariolist.php";
+    String url = Util.RUTA+"/Tareas/horariolist.php";
     Horarios horarios;
 
     Button btnRegresar;

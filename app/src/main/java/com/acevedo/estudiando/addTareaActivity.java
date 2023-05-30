@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.acevedo.estudiando.Util.Util;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -201,7 +202,8 @@ public class addTareaActivity extends AppCompatActivity {
             return;
         } else {
             progressDialog.show();
-            StringRequest request = new StringRequest(Request.Method.POST, "https://tdhxqkfq.lucusvirtual.es/android/insertar_tarea.php", new Response.Listener<String>() {
+            String url = Util.RUTA+"/insertar_tarea.php";
+            StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
                     Toast.makeText(getApplicationContext(), "Tarea Registrada exitosamente !", Toast.LENGTH_SHORT).show();

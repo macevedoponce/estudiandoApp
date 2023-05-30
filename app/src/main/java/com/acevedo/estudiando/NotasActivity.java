@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.acevedo.estudiando.Util.Util;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -32,7 +33,7 @@ public class NotasActivity extends AppCompatActivity {
     AdapterAlumnos adapterAlumnos;
 
     public static ArrayList<Alumnos> alumnosArrayList = new ArrayList<>();
-    String url="https://tdhxqkfq.lucusvirtual.es/android/Tareas/alumnoslist.php";
+    String url= Util.RUTA+"/Tareas/alumnoslist.php";
     Alumnos alumnos;
 
     Button btnRegresar;

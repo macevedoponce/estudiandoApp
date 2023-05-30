@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.acevedo.estudiando.Util.Util;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -36,7 +37,8 @@ public class ExamenesActivity extends AppCompatActivity {
     AdapterExamenes adapterExamenes;
 
     public static ArrayList<Examenes>examenesArrayList = new ArrayList<>();
-    String url = "https://tdhxqkfq.lucusvirtual.es/android/Tareas/exameneslist.php";
+
+    String url = Util.RUTA+"/Tareas/exameneslist.php";
     Examenes examenes;
     Button btnRegresar;
 
@@ -86,7 +88,8 @@ public class ExamenesActivity extends AppCompatActivity {
         });
     }
     private void EliminarDatos(String id){
-        StringRequest request = new StringRequest(Request.Method.POST, "https://tdhxqkfq.lucusvirtual.es/android/eliminar_examen.php", new Response.Listener<String>() {
+        String url= Util.RUTA+"/eliminar_examen.php";
+        StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Toast.makeText(ExamenesActivity.this, "Examen eliminado", Toast.LENGTH_SHORT).show();

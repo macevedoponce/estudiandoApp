@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.acevedo.estudiando.Util.Util;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -35,7 +36,7 @@ public class TareasEstudianteActivity extends AppCompatActivity {
     Adapter adapter;
 
     public static ArrayList<Tareas>tareasArrayList = new ArrayList<>();
-    String url = "https://tdhxqkfq.lucusvirtual.es/android/Tareas/tareaslist.php";
+    String url = Util.RUTA+"/Tareas/tareaslist.php";
     Tareas tareas;
 
     Button btnRegresar;

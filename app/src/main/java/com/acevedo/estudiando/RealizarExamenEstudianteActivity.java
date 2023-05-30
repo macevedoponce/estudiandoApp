@@ -12,6 +12,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.acevedo.estudiando.Util.Util;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -35,7 +36,7 @@ public class RealizarExamenEstudianteActivity extends AppCompatActivity {
     int contador = 1; //cuenta el numero de preguntas y las identifica
     double notaObtenida = 0.00; // Guarda los puntos obtenios en cada pregunta
     boolean check = false; // valida que no se dejen preguntas vacias
-    String url = "https://tdhxqkfq.lucusvirtual.es/android/mostrar_preguntas.php";
+    String url = Util.RUTA+"/mostrar_preguntas.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
